@@ -1,0 +1,22 @@
+{
+  "name": "katan_mockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amano-hiiragi/katan_mockup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amano-hiiragi/katan_mockup/issues"
+  },
+  "homepage": "https://github.com/amano-hiiragi/katan_mockup#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

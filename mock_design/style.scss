@@ -1,0 +1,18 @@
+#myHexGrid {
+    $gridWidth:   20em;
+    $gridHeight:  auto;
+    $columnCount: 3;
+    $rowCount:    2;
+    $hexCount:    auto;
+    $hexLayout:   row;
+    $gridOrient:  vertical;
+    $crop:        none;
+    $cropFactor:  1;
+    $hexContent:  auto;
+    $hexSize:     auto;
+    $hexMargin:   0.5em;
+    $hexShape:    hexagon;
+    $hexColor:    #48a999;
+    $breakpoints: none;
+    $images:      none;
+}

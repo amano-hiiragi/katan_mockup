@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../katan_mockup/design/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
