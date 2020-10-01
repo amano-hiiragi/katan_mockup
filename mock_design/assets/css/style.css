@@ -1,0 +1,21 @@
+.parent_div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parent_div > div {
+  height: 60px;
+  width: 60px;
+  border: 1px dotted #000;
+}
+
+.can_set_reclamation {
+  background: grey;
+}
+
+.resources {
+  background: orange;
+}
+/*# sourceMappingURL=style.css.map */

@@ -26,29 +26,29 @@ test_map[8] =   '  x-x-x-x-x-x-x-x-x  '.split('');
 test_map[9] =   '    | n | n | n |    '.split('');
 test_map[10] =  '    x-x-x-x-x-x-x    '.split('');
 
-console.log(test_map[1][6]);
-console.log(test_map[1][10]);
-console.log(test_map[1][14]);
+// console.log(test_map[1][6]);
+// console.log(test_map[1][10]);
+// console.log(test_map[1][14]);
 
-console.log(test_map[3][4]);
-console.log(test_map[3][8]);
-console.log(test_map[3][12]);
-console.log(test_map[3][16]);
+// console.log(test_map[3][4]);
+// console.log(test_map[3][8]);
+// console.log(test_map[3][12]);
+// console.log(test_map[3][16]);
 
-console.log(test_map[5][2]);
-console.log(test_map[5][6]);
-console.log(test_map[5][10]);
-console.log(test_map[5][14]);
-console.log(test_map[5][18]);
+// console.log(test_map[5][2]);
+// console.log(test_map[5][6]);
+// console.log(test_map[5][10]);
+// console.log(test_map[5][14]);
+// console.log(test_map[5][18]);
 
-console.log(test_map[7][4]);
-console.log(test_map[7][8]);
-console.log(test_map[7][12]);
-console.log(test_map[7][16]);
+// console.log(test_map[7][4]);
+// console.log(test_map[7][8]);
+// console.log(test_map[7][12]);
+// console.log(test_map[7][16]);
 
-console.log(test_map[9][6]);
-console.log(test_map[9][10]);
-console.log(test_map[9][14]);
+// console.log(test_map[9][6]);
+// console.log(test_map[9][10]);
+// console.log(test_map[9][14]);
 
 // 数値トークンの配列を作成し、乱数を用いて砂漠設置。
 function install_numeric_token() {
@@ -79,4 +79,42 @@ test_map[7][12] = numeric_token[15];
 test_map[5][14] = numeric_token[16];
 test_map[3][12] = numeric_token[17];
 test_map[5][10] = numeric_token[18];
-console.log(test_map);
+// console.log(test_map);
+
+for (let index = 0; index < test_map.length; index++) {
+  // console.log(test_map[index]);
+    var parent_div = document.createElement("div");
+    parent_div.className = "parent_div";
+    document.body.appendChild(parent_div);
+
+  for (let ii = 0; ii < test_map[index].length; ii++) {
+    // console.log(test_map[index][ii]);
+    var div = document.createElement("div");
+    var text = document.createTextNode(test_map[index][ii]);
+    console.log(text);
+    switch (test_map[index][ii]) {
+      case 'x':
+        console.log('開拓地,街');
+        div.className = 'can_set_reclamation';
+        break;
+      case '-':
+        console.log('道');
+        div.className = 'can_set_reclamation';
+        break;
+      case '|':
+        console.log('道');
+        div.className = 'can_set_reclamation';
+        break;
+      case '':
+        console.log('海');
+        break;
+      case isNaN(test_map[index][ii]):
+        div.className = 'resources';
+        break;
+      default:
+        console.log(`Sorry, we are out of ${text}.`);
+    }
+
+    document.body.appendChild(parent_div).appendChild(div).appendChild(text);
+  }
+}

@@ -1,18 +1,15 @@
-#myHexGrid {
-    $gridWidth:   20em;
-    $gridHeight:  auto;
-    $columnCount: 3;
-    $rowCount:    2;
-    $hexCount:    auto;
-    $hexLayout:   row;
-    $gridOrient:  vertical;
-    $crop:        none;
-    $cropFactor:  1;
-    $hexContent:  auto;
-    $hexSize:     auto;
-    $hexMargin:   0.5em;
-    $hexShape:    hexagon;
-    $hexColor:    #48a999;
-    $breakpoints: none;
-    $images:      none;
+.parent_div{
+    display: flex;
+}
+.parent_div > div{
+    height: 60px;
+    width: 60px;
+    border: 1px dotted #000;
+}
+
+.can_set_reclamation{
+    background: grey;
+}
+.resources{
+    background: orange;
 }

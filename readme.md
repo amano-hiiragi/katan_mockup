@@ -4,6 +4,8 @@
 
 - node.js
   - Express.js
+- docker
+- AWS
 
 ## 参考サイト一覧
 
